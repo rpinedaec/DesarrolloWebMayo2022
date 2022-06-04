@@ -14,15 +14,25 @@ jugar.addEventListener("click",function(){
         console.log(resultado);
         setTimeout(() => {
            
-            intentos ++;
-            $("#dado"+intentos).attr('src', "img/"+resultado+".jpeg");
-            $("#intento"+ intentos).text(intentos);
-            $("#valor"+ intentos).text(resultado);
-            let puntaje =document.getElementById("puntaje"+intentos);
-            puntaje.innerText= resultado;
-            totalPuntaje = totalPuntaje+ resultado;
+            intentos++;
+            $("#dado" + intentos).attr('src', "img/" + resultado + ".png");
+            $("#intento" + intentos).text(intentos);
+            $("#valor" + intentos).text(resultado);
+            let puntaje = document.getElementById("puntaje" + intentos);
+            puntaje.innerText = resultado;
+            totalPuntaje = totalPuntaje + resultado;
             let total = document.getElementById("total");
             total.innerText = totalPuntaje;
+            if (totalPuntaje <= 5) {
+                total.style.color = "white";
+                total.style.backgroundColor = "red";
+            } else if (totalPuntaje <= 11) {
+                total.style.color = "black";
+                total.style.backgroundColor = "yellow";
+            } else if (totalPuntaje <= 18) {
+                total.style.color = "white";
+                total.style.backgroundColor = "green";
+            }
            
             $("#exampleModal").modal('hide');
             $("#container").show();
