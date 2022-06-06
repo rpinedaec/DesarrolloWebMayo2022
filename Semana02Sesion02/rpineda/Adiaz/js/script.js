@@ -47,8 +47,8 @@ let btnGreen = document.querySelector('#btnGreen');
 let content = document.querySelector('#total');
 
 btnRed.addEventListener('click',()=> content.style.color = 'Red');
-btnRed.addEventListener('click',()=> content.style.color = 'Yellow');
-btnRed.addEventListener('click',()=> content.style.color = 'Green');
+btnYellow.addEventListener('click',()=> content.style.color = 'Yellow');
+btnGreen.addEventListener('click',()=> content.style.color = 'Green');
 
 function changeColor(e)
 {
