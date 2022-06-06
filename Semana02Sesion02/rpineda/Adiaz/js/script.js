@@ -35,9 +35,23 @@ jugar.addEventListener("click",function(){
             text: 'Intentos Completos'
           })
     }
-
 });
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
+
+let btnRed = document.querySelector('#btnRed');
+let btnYellow = document.querySelector('#btnYellow');
+let btnGreen = document.querySelector('#btnGreen');
+let content = document.querySelector('#total');
+
+btnRed.addEventListener('click',()=> content.style.color = 'Red');
+btnRed.addEventListener('click',()=> content.style.color = 'Yellow');
+btnRed.addEventListener('click',()=> content.style.color = 'Green');
+
+function changeColor(e)
+{
+        var color = e.value;
+        e.style.color = color;
+}

@@ -101,3 +101,30 @@ body {
         text-transform: uppercase;
         font-size: 18px;
     }
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#total{
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 10px;
+
+}
+p{
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 10px;
+}
+button{
+    padding: 10px 20px;
+    margin: 5px;
+
+}
