@@ -1,0 +1,40 @@
+.content-dado {
+    padding: 15px 50px 15px 50px;
+    border-radius: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 0 0 10px 1px #ffffff;
+}
+
+.dado-notify:nth-child(1) {
+    position: relative;
+    border-radius: 5px;
+    padding: 15px 20.5px;
+    left: -70px;
+    top: -15px;
+    box-shadow: 0 0 15px 2px #ffffff;
+}
+
+.dado-notify:nth-child(2) {
+    position: relative;
+    box-shadow: 0 0 15px 2px #ffffff;
+    border-radius: 50%;
+    padding: 15px 20.5px;
+    right: -70px;
+    top: -15px;
+}
+
+.rojo {
+    background-color: #ff0000 !important;
+}
+
+.amarillo {
+    background-color: #ffdd00 !important;
+}
+
+.verde {
+    background-color: #349f24 !important;
+}
+
+.default {
+    background-color: #e8e8e8!important;
+}

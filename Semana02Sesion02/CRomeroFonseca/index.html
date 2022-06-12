@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Semana 2 Sesion 2</title>
+        <link
+            href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+            rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <a href="#" id="jugar" class="btn btn-block btn-success"><span class="glyphicon glyphicon-tower"></span> Jugar</a>
+        <a href="#" id="resetear" class="btn btn-block btn-warning"><span class="glyphicon glyphicon-refresh"></span> Resetear</a>
+        <br>
+        
+        <br>
+        <div class="container" id="container" style="display: none;">
+            <div class="row" id="ads">
+                <div class="col-md-4">
+                    <div class="card rounded">
+                        <div class="card-image">
+                            <span class="card-notify-badge" id="intento1"></span>
+                            <span class="card-notify-year" id="valor1"></span>
+                            <img class="img-fluid" id="dado1"
+                                src="img/blanco.jpeg"
+                                alt="Alternate Text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card rounded">
+                        <div class="card-image">
+                            <span class="card-notify-badge" id="intento2"></span>
+                            <span class="card-notify-year" id="valor2"></span>
+                            <img class="img-fluid" id="dado2"
+                                src="img/blanco.jpeg"
+                                alt="Alternate Text" />
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card rounded">
+                        <div class="card-image">
+                            <span class="card-notify-badge" id="intento3"></span>
+                            <span class="card-notify-year" id="valor3"></span>
+                            <img class="img-fluid" id="dado3"
+                                src="img/blanco.jpeg"
+                                alt="Alternate Text" />
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Intentos</th>
+                <th>Puntaje</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td id="puntaje1"></td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="puntaje2"></td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="puntaje3"></td>
+
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td id="total"></td>
+
+            </tr>
+        </table>
+
+
+        <div id="exampleModal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <img src="img/girando.gif">
+              </div>
+            </div>
+          </div>
+
+        <script
+            src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="js/script.js"></script>
+    </body>
+</html>
