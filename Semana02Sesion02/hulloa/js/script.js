@@ -41,3 +41,32 @@ jugar.addEventListener("click",function(){
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
+
+
+
+  function changeColor(n) {
+    if (n <= 5) {
+      total.classList.add("red");
+    } else if (n <= 11) {
+      total.classList.add("yellow");
+    } else if (n <= 18) {
+      total.classList.add("green");
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
