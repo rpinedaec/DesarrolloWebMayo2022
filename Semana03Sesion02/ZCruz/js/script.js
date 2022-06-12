@@ -11,7 +11,6 @@ $("#buscar").on("click", function () {
             console.log(respuesta)
             usuarios = respuesta.results;
             console.log(usuarios);
-
             $table.bootstrapTable({ data: usuarios });
 
         }
