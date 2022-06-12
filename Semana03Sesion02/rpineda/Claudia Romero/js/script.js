@@ -4,7 +4,7 @@ var $table = $('#tblResultados');
 let usuariosAgregados= [];
 
 $("#buscar").on("click", function () {
-    let url = "https://randomuser.me/api/?results=20";
+    let url = "https://randomuser.me/api/?results=10";
     fetch(url)
         .then((response) => response.json())
         .then(
