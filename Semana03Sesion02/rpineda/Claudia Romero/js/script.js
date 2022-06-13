@@ -64,14 +64,14 @@ $('#opciones').on('change', function() {
 
   function operateFormatter(value, row, index) {
     return [
-      '<a class="like" href="javascript:void(0)" title="Like">',
-      'Agregar',
-      '</a>  ',
-      '<a class="remove" href="javascript:void(0)" title="Remove">',
-      'Eliminar',
-      '</a>'
+        '<a class="like" href="javascript:void(0)" title="Like">',
+        'Agregar',
+        '</a>  ',
+        '<a class="remove" href="javascript:void(0)" title="Remove">',
+        'Eliminar',
+        '</a>'
     ].join('')
-  }
+}
   window.operateEvents = {
     'click .like': function (e, value, row, index) {
       usuariosAgregados.push(row);
