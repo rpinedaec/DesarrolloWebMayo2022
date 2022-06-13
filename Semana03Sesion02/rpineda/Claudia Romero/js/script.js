@@ -89,9 +89,95 @@ $('#opciones').on('change', function() {
 $("#verDatos").on("click", function () {
     console.log(usuariosAgregados)
     usuariosAgregados.forEach(element => {
-        let html = '<div class="col-xs-12 col-sm-6 col-md-4"> <div class="image-flip" > <div class="mainflip flip-0"> <div class="frontside"> <div class="card"> <div class="card-body text-center"> <p><img class=" img-fluid" src="'+element.picture.large+' " alt="card image"></p> <h4 class="card-title">'+element.name.title + " "+element.name.first + " "+ element.name.last+'</h4> <p class="card-text">'+element.email+'</p> <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> </div> </div> </div> <div class="backside"> <div class="card"> <div class="card-body text-center mt-4"> <h4 class="card-title">'+element.gender+' </h4> <p class="card-text">'+element.cell +"<br>"+element.nat+' </p> <ul class="list-inline"> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-facebook"></i> </a> </li> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-twitter"></i> </a> </li> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-skype"></i> </a> </li> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-google"></i> </a> </li> </ul> </div> </div> </div> </div> </div> </div>'; 
-        $("#teams").append(html);
+        let html = `<div class="col-xs-12 col-sm-6 col-md-4"> <div class="image-flip" > <div class="mainflip flip-0"> <div class="frontside"> <div class="card"> <div class="card-body text-center"> <p><img class=" img-fluid" src="${element.picture.large} " alt="card image"></p> <h4 class="card-title">${element.name.title} ${element.name.first} ${element.name.last}</h4> <p class="card-text">${element.email}</p> <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a> </div> </div> </div> <div class="backside"> <div class="card"> <div class="card-body text-center mt-4"> <h4 class="card-title">${element.gender} </h4> <p class="card-text">${element.cell}<br>${element.nat} </p> <ul class="list-inline"> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-facebook"></i> </a> </li> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-twitter"></i> </a> </li> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-skype"></i> </a> </li> <li class="list-inline-item"> <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02"> <i class="fa fa-google"></i> </a> </li> </ul> </div> </div> </div> </div> </div> </div>`; 
     });
+});$("#verDatos").on("click", function () {
+    const mostrardatos = (data) => {
+        let datos = '';
+
+        for (let i = 0; i < data.length; i++) {
+            console.log(data[i].gender == "male");
+
+            datos += `
+            <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip">
+                <div class="mainflip flip-0">
+                    <div class="frontside">
+                        <div class= `
+            if (usuarios[i].gender == "male") {
+                datos += '"male"'
+            } else {
+                datos += '"female"'
+            }
+            datos += `
+                >
+                <div class="card-body text-center">
+                <p>
+                    <img class=" img-fluid radius" src="${data[i].picture.large}" alt="card image">
+                </p>
+                <h4 class="card-title">${data[i].name.title} ${data[i].name.first} ${data[i].name.last}</h4>
+                <p class="card-text">Email: ${data[i].email}<br> Pais: ${data[i].location.country}<br> Ciudad: ${data[i].location.city}</p>
+                <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm">
+                    <i class="fa fa-plus"></i>
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="backside">
+                <div class= `
+            if (usuarios[i].gender == "male") {
+                datos += '"male"'
+            } else {
+                datos += '"female"'
+            }
+            datos += `
+                >
+            <div class="card-body text-center mt-4">
+            <h4 class="card-title">${data[i].gender}</h4>
+            <p class="card-text">${data[i].cell}
+                <br>"${data[i].nat} 
+            </p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                        <i class="fa fa-skype"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+                        <i class="fa fa-google"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>   
+            `
+        }
+
+        $("#teams").html(datos);
+    }
+    mostrardatos(usuarios);
+
+});
+
+$("#resetear").on("click", function () {
+    $("#teams").append(html);
+    usuariosAgregados = [];
+
 });
 
 
