@@ -126,4 +126,60 @@ section .section-title {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-}
+}.btn-success {
+    color: #fff;
+    background-color: rgb(46, 98, 243);
+    border-color: rgb(0, 113, 243);
+  }
+  
+  .select2-container--default
+    .select2-results_option--highlighted.select2-results_option--selectable {
+    background-color: #0acece;
+    color: white;
+  }
+  #verDatos:hover {
+    background-color: #2432f0;
+  }
+  #verDatos:active {
+    background-color: rgb(255, 115, 0);
+    border-color: #ff5100;
+  }
+  #verDatos a:active {
+    background-color: rgb(255, 115, 0);
+    border-color: #ff5100;
+  }
+  .bootstrap-table .fixed-table-container .table thead th .th-inner {
+    padding: 0.75rem;
+    vertical-align: bottom;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: rgb(224, 172, 142);
+  }
+  #tblResultados thead tr th {
+    border: black 5px solid;
+  }
+  tbody,tr, th, td{
+    border: rgb(255, 141, 35) 0px solid !important;
+  }
+  .male{
+      background-color: rgb(156, 214, 156);
+  }
+  .female {
+    background-color: #ff0000;
+  }
+  .male {
+    border: 2px rgb(0, 85, 0) solid;
+  }
+  .female {
+    border: 2px red solid;
+  }
+  .radius{
+    border-radius: 15%;
+  }
+  #tblResultados tr:nth-child(even){
+    background-color: bisque;
+  }
+  #tblResultados tr:nth-child(odd) {
+    background-color: rgb(248, 248, 248);
+  }
