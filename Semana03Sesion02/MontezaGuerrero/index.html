@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabla de usuarios</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet"> 
+    <!-- CSS only -->
+    <link
+            href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+            rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<h1>Tabla de Usuarios</h1>
+            <div>
+                <button id="verDatos" type="button" class="btn btn-success btn-block">
+                    Ver Datos agregados
+                </button>
+            </div>
+			<div>
+				<button id="buscar" type="button" class="btn btn-success">Cargar Usuarios</button>
+                <Select class="selectBootstrap" id="opciones">
+                    <option value="-1">Seleciona un valor</option>
+                </Select>
+			</div>
+            
+		</header>
+		<main>
+			
+			<div class="error_box" id="error_box">
+				<p>Se ha producido un error.</p>
+			</div>
+			<table id="tblResultados" class="tabla">
+				<thead>
+                    <tr>
+                        <th data-field="name" data-formatter="nameFormatter">Nombres</th>
+                        <th data-field="nat">Nacionalidad</th>
+                        <th data-field="email">Email</th>
+                        <th data-field="gender">Genero</th>
+                        <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaBody" class="tablaRow">
+                    
+                </tbody>
+
+			</table>
+			<div class="loader" id="loader"></div>
+            <section id="team" class="pb-5">
+                <div class="container">
+                    <h5 class="text-center mt-4 section-title h1">OUR TEAM</h5>
+                    <div id="teams" class="row">
+                        <!-- Team member -->
+                        
+                    </div>
+                </div>
+            </section>
+		</main>
+	</div>
+    <script
+            src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
