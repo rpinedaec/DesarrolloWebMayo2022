@@ -5,14 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Semana03 Sesion02</title>
-
-        <link
-            href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
-            rel="stylesheet" id="bootstrap-css">
-            <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
-            <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-            <script src="https://kit.fontawesome.com/0d5b745540.js" crossorigin="anonymous"></script>
-            <link rel="stylesheet" href="css/style.css">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0d5b745540.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/style.css">
+        
     </head>
     <body>
         <div class="container-fluid">
@@ -33,7 +31,6 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-
                     <button id="buscar" type="button" class="btn btn-block btn-primary">
                         Buscar
                     </button>
@@ -46,26 +43,26 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <table id="tblResultados">
+                    <table id="tblResultados" class="">
                         <thead>
                             <tr>
-                              <th data-field="name" data-formatter="nameFormatter">Nombres</th>
-                              <th data-field="nat">Nacionalidad</th>
-                              <th data-field="email">Email</th>
-                              <th data-field="gender">Genero</th>
-                              <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents">Acciones</th>
+                                <th data-field="name" data-formatter="nameFormatter">Nombres</th>
+                                <th data-field="nat">Nacionalidad</th>
+                                <th data-field="email">Email</th>
+                                <th data-field="gender">Genero</th>
                             </tr>
-                          </thead>
+                        </thead>
                     </table>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-8">
-                </div>
+                <div class="col-md-8"></div>
                 <div class="col-md-4">
-
                     <button id="verDatos" type="button" class="btn btn-success btn-block">
-                        Ver Datos
+                        Ver datos en Cards
+                    </button>
+                    <button id="resetear" type="button" class="btn btn-danger">
+                        ELIMINAR TODO
                     </button>
                 </div>
             </div>
@@ -73,21 +70,12 @@
                 <div class="container">
                     <h5 class="section-title h1">OUR TEAM</h5>
                     <div id="teams" class="">
-                        <!-- Team member -->
-                        
-                    </div>
+                        <!-- Team member --></div>
                 </div>
             </section>
         </div>
-
-
-
-
-
-        <script
-            src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script
-            src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <script src="js/script.js"></script>
