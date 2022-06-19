@@ -23,7 +23,7 @@
         "nombre": "Zapatillas Classic Legacy AZ Looney Tunes",
         "descripcion":"ZAPATILLAS INSPIRADAS EN EL RUNNING RETRO CON DETALLES DE UN CLÁSICO ANIMADO.¿Qué hay de nuevo, viejo? Ponte estas Reebok Classic Legacy y diviértete como el conejo más travieso. Inspiradas en Bugs Bunny y su amor por las zanahorias. El material de gamuza peluda y los detalles elásticos les dan a estas zapatillas lo que necesitas para tu próxima aventura.",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura2.JPG",
+        "imagen": "../images/zapatillas/Captura2.jpg",
         "cantidad": 25,
 		"valor":349,
         "promocion": false
@@ -33,7 +33,7 @@
         "nombre": "Zapatillas Hurrikaze II Low Looney Tunes",
         "descripcion":" ¡zapatillas explosivas en la cancha! Inspiradas en Wile E. Coyote y su pasión por detonar dinamita, estas zapatillas Reebok para hombre vienen directamente de su arsenal. ¡Ponte estas zapatillas de básquet cargadas de acción y sal a la cancha con un BANG!",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura3.JPG",
+        "imagen": "../images/zapatillas/Captura3.jpg",
         "cantidad": 6,
 		"valor":379,
         "promocion": true
@@ -43,7 +43,7 @@
         "nombre": "Zapatillas Princess",
         "descripcion":"Con estas zapatillas, unas de las más cómodas que tendrás nunca, cautivarás a todos. Parte superior de piel sintética que aporta un confort inmediato. Este confort también te lo aporta su suave forro de felpa. Además, la mediasuela de EVA y la plantilla de espuma acolchada te proporcionan una gran amortiguación.",
         "categoria": "enceres",
-        "imagen": "../images/zapatillas/Captura4.JPG",
+        "imagen": "../images/zapatillas/Captura4.jpg",
         "cantidad": 28,
 		"valor":199,
         "promocion": true
@@ -53,7 +53,7 @@
         "nombre": "Zapatillas Nano X1 Looney Tunes",
         "descripcion":" Un look explosivo y cargado de energía, perfecto para unas zapatillas de alto rendimiento. ",
         "categoria": "muebles",
-        "imagen": "../images/zapatillas/Captura5.JPG",
+        "imagen": "../images/zapatillas/Captura5.jpg",
         "cantidad": 27,
 		"valor":479,
         "promocion": false
@@ -63,7 +63,7 @@
         "nombre": "Zapatillas Club C 85 Looney Tunes",
         "descripcion":"Ponte estas zapatillas de cuero de Reebok Club C y diviértete al mejor estilo de los Looney Tunes™. Advertencia: ¡estas zapatillas pueden resultar escandalosas, exageradas y un poco alocadas!",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura6.JPG",
+        "imagen": "../images/zapatillas/Captura6.jpg",
         "cantidad": 36,
 		"valor":329,
         "promocion": false
@@ -73,7 +73,7 @@
         "nombre": "Zapatillas Princess",
         "descripcion":"Con estas zapatillas, unas de las más cómodas que tendrás nunca, cautivarás a todos. Parte superior de piel sintética que aporta un confort inmediato. Este confort también te lo aporta su suave forro de felpa. Además, la mediasuela de EVA y la plantilla de espuma acolchada te proporcionan una gran amortiguación.",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura7.JPG",
+        "imagen": "../images/zapatillas/Captura7.jpg",
         "cantidad": 42,
 		"valor":200,
         "promocion": true
@@ -83,7 +83,7 @@
         "nombre": "Zapatillas Nanoflex TR",
         "descripcion":"Disfruta de la comodidad y el rendimiento, desde el squat rack hasta las cuerdas de combate. Estas zapatillas para entrenar Reebok de hombre pueden hacerlo todo, desde sesiones de levantamiento de pesas hasta compras postentrenamiento. Vienen con un exterior de malla transpirable y ligera que mantiene tus pies frescos y ventilados.",
         "categoria": "muebles",
-        "imagen": "../images/zapatillas/Captura8.JPG",
+        "imagen": "../images/zapatillas/Captura8.jpg",
         "cantidad": 23,
 		"valor":259,
         "promocion": false
@@ -93,7 +93,7 @@
         "nombre": "Zapatillas Turbo Restyle",
         "descripcion":" Estas zapatillas Reebok están inspiradas en modelos para correr de la vieja escuela. Desde las líneas definidas y geométricas hasta los toques de color, no hay nada que aburra de este par.",
         "categoria": "enceres",
-        "imagen": "../images/zapatillas/Captura9.JPG",
+        "imagen": "../images/zapatillas/Captura9.jpg",
         "cantidad": 25,
 		"valor":249,
         "promocion": true
@@ -103,7 +103,7 @@
         "nombre": "Zapatillas Reebok Royal Techque",
         "descripcion":" El Royal Techque es un modelo clásico por su confección en cuero y su look deportivo que combina tanto con shorts como con pantalones caquis y una casaca.",
         "categoria": "enceres",
-        "imagen": "../images/zapatillas/Captura10.JPG",
+        "imagen": "../images/zapatillas/Captura10.jpg",
         "cantidad": 9,
 		"valor":219,
         "promocion": false
@@ -113,7 +113,7 @@
         "nombre": "Zapatillas Classic Leather",
         "descripcion":"Estas zapatillas Reebok Classic Leather son como un lienzo en blanco para tu estilo. Las líneas definidas y los colores sólidos las hacen fáciles de combinar con cualquier outfit. ",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura11.JPG",
+        "imagen": "../images/zapatillas/Captura11.jpg",
         "cantidad": 4,
 		"valor":279,
         "promocion": false
@@ -123,7 +123,7 @@
         "nombre": "Zapatillas Nanoflex TR",
         "descripcion":" Estas zapatillas para entrenar Reebok de hombre pueden hacerlo todo, desde sesiones de levantamiento de pesas hasta compras postentrenamiento. Vienen con un exterior de malla transpirable y ligera que mantiene tus pies frescos y ventilados.",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura12.JPG",
+        "imagen": "../images/zapatillas/Captura12.jpg",
         "cantidad": 5,
 		"valor":259,
         "promocion": false
@@ -133,7 +133,7 @@
         "nombre": "Zapatillas Club C Revenge",
         "descripcion":" Estas Reebok Club C Revenge son la versión fresca de un modelo vintage. Las combinaciones de colores retro mantienen su estilo auténtico, y los detalles premium como el exterior de cuero de grano completo y el forro interior de polar suave le imprimen una vibra de lujo",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura13.JPG",
+        "imagen": "../images/zapatillas/Captura13.jpg",
         "cantidad": 7,
 		"valor":259,
         "promocion": false
@@ -143,7 +143,7 @@
         "nombre": "Zapatillas Classic Leather",
         "descripcion":" Estas Reebok Classic Leather cuentan con detalles inspiradas en la icónica máscara, como franjas laterales moldeadas en 3D y color contrastante. El logo de ventana viene con un material que cambia a color dorado con el uso.",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura14.JPG",
+        "imagen": "../images/zapatillas/Captura14.jpg",
         "cantidad": 8,
 		"valor":329,
         "promocion": false
@@ -153,7 +153,7 @@
         "nombre": "Zapatillas Classic Leather",
         "descripcion":" Estas zapatillas Reebok Classic Leather son como un lienzo en blanco para tu estilo. Las líneas definidas y los colores sólidos las hacen fáciles de combinar con cualquier outfit.",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura15.JPG",
+        "imagen": "../images/zapatillas/Captura15.jpg",
         "cantidad": 4,
 		"valor":279,
         "promocion": false
@@ -163,7 +163,7 @@
         "nombre": "Zapatillas Nano X2 Reebok",
         "descripcion":"Usa estos tenis Reebok para hombre y mantente cómodo y seguro dentro y fuera del gym. Su exterior de tejido Flexweave® es transpirable y resistente, y cuenta con soporte integrado para movimientos estables en todas las direcciones. La suela de caucho con patrón de tacos en zonas estratégicas te brinda tracción segura.",
         "categoria": "equipos",
-        "imagen": "../images/zapatillas/Captura16.JPG",
+        "imagen": "../images/zapatillas/Captura16.jpg",
         "cantidad": 4,
 		"valor":399,
         "promocion": false
