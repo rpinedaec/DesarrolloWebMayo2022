@@ -1,0 +1,171 @@
+[
+    {
+        "codigo": "ARTCIULO0001",
+        "nombre": "funko",
+        "descripcion":"descripcion de la silla con tallas",
+        "categoria": "muebles",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 44,
+		"valor":200,
+        "promocion": true,
+        "color":[
+            "negro",
+            "azul",
+            "rojo"
+        ],
+        "talla":[
+            9,10,11,12,14
+        ]
+
+    },
+    {
+        "codigo": "ARTICULO0002",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 25,
+		"valor":300,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0003",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 6,
+		"valor":200,
+        "promocion": true
+    },
+    {
+        "codigo": "ARTICULO0005",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "enceres",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 28,
+		"valor":200,
+        "promocion": true
+    },
+    {
+        "codigo": "ARTICULO0007",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "muebles",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 27,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0008",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 36,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0009",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 42,
+		"valor":200,
+        "promocion": true
+    },
+    {
+        "codigo": "ARTICULO0010",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "muebles",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 23,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0012",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "enceres",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 25,
+		"valor":200,
+        "promocion": true
+    },
+    {
+        "codigo": "ARTICULO0020",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "enceres",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 9,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0022",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 4,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0023",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 5,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0024",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 7,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0025",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 8,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0026",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?funko",
+        "cantidad": 4,
+		"valor":200,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0027",
+        "nombre": "funko",
+        "descripcion":"descripcion",
+        "categoria": "equipos",
+        "imagen": "https://source.unsplash.com/400x400/?FUNKO",
+        "cantidad": 4,
+		"valor":200,
+        "promocion": false
+    }
+]
