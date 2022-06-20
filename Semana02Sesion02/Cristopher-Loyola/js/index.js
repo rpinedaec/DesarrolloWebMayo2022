@@ -8,6 +8,7 @@ $("#resetear").on("click", function(){
 
 jugar.addEventListener("click",function(){
     if(intentos < 3){
+        
         $("#exampleModal").modal('show');
         let resultado = getRandomInt(1,6);
         console.log(resultado)
@@ -17,12 +18,13 @@ jugar.addEventListener("click",function(){
             $("#dado" + intentos).attr('src',"./img/"+resultado+".jpeg");
             $("#intento" + intentos).text(intentos);
             $("#resultado" + intentos).text(resultado);
+            
             let puntaje = document.getElementById("puntaje" + intentos);
             puntaje.innerText = resultado;
             puntajeTotal = puntajeTotal + resultado;
 
-            let total = document.getElementById("total");
-            total.innerText = puntajeTotal;   
+            $("#total").text(puntajeTotal);
+  
             if(puntajeTotal <=  5){
                 $("#total").parents("tr").css("background-color", "red")
             }else if(puntajeTotal <=  11){
@@ -30,6 +32,7 @@ jugar.addEventListener("click",function(){
             }else{
                 $("#total").parents("tr").css("background-color", "green")
             }
+
             $("#exampleModal").modal('hide');
         }, 3000);
         
