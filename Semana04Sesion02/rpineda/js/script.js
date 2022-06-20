@@ -102,7 +102,7 @@ function cargarProductos() {
     .then(function (response) {
       // console.log(response);
       if (response.status === 200) {
-        productos= response.data;
+        productos = response.data;
         response.data.forEach(element => {
           let promo = "";
           let moneda = "S/.";
@@ -119,24 +119,23 @@ function cargarProductos() {
               break;
             case "Dolares":
               moneda = "$";
-              valor = Math.round( element.valor / 3.77)
+              valor = Math.round(element.valor / 3.77)
               break;
             case "Euros":
               moneda = "€"
-              valor = Math.round( element.valor / 3.94)
-              
+              valor = Math.round(element.valor / 3.94)
+
               break;
             default:
               moneda = "S/.";
               break;
           }
-          $("#productos").append('<div class="col-md-4"><div class="product-item"><div class="product-thumb">' 
-          + promo + '<img class="img-responsive" src="' 
-          + element.imagen + ' " alt="product-img"/><div class="preview-meta"><ul><li><span data-toggle="modal" data-target="#product-modal" onclick="productoActual(\''
-          + element.codigo +'\')"><i class="tf-ion-ios-search-strong"></i></span></li><li> <a href="#!" ><i class="tf-ion-ios-heart"></i></a></li><li><a href="#!"><i class="tf-ion-android-cart"></i></a></li></ul> </div></div><div class="product-content"><h4><a href="product-single.html">' 
-          + element.nombre + '</a></h4><p class="price">'
-          + moneda 
-          + valor + '</p></div></div>');
+          $("#productos").append('<div class="col-md-4"><div class="product-item"><div class="product-thumb">'
+            + promo + '<img class="img-responsive" src="'
+            + element.imagen + ' " alt="product-img"/><div class="preview-meta"><ul><li><span data-toggle="modal" data-target="#product-modal" onclick="productoActual(\''
+            + element.codigo + '\')"><i class="tf-ion-ios-search-strong"></i></span></li><li> <a href="#!"><i class="tf-ion-ios-heart"></i></a></li><li><a href="#!" id= "agregarItem"  ><i class="tf-ion-android-cart"  ></i></a></li></ul> </div></div><div class="product-content"><h4><a href="product-single.html">'
+            + element.nombre + '</a></h4><p class="price">'
+            + moneda + valor + '</p></div></div>');
         });
 
       }
@@ -150,13 +149,14 @@ $('#tipoCambio').change(function () {
   tipoCambio = $(this).val();
   $("#productos").text("");
   cargarProductos();
+  cargarCarrito();
 });
 
 let itemActual;
-let carritoCompras= [];
+let carritoCompras = [];
 
-function productoActual(id){
-  let  item = productos.find(item => item.codigo === id)
+function productoActual(id) {
+  let item = productos.find(item => item.codigo === id)
   itemActual = item;
   $("#imgProducto").attr("src", item.imagen);
   $("#nombreProducto").text(item.nombre);
@@ -171,16 +171,49 @@ $("#agregarItem").on("click", function () {
 
 let totalCarrito = 0;
 
-function cargarCarrito(){
+function cargarCarrito() {
+  cantidadProductos = 0;
   totalCarrito = 0
+
   $("#carrito").text("");
-  carritoCompras.forEach(element => {
+
+  let cargarCarrito = [...new Set(carritoCompras)];
+  console.log(cargarCarrito);
+
+  cargarCarrito.forEach(element => {
+    let cantidadProductos = carritoCompras.reduce((acumulador, itemID) => {
+      return element.codigo === itemID.codigo ? acumulador += 1 : acumulador;
+    }, 0);
+    console.log(cantidadProductos);
+    if (tipoCambio === "Soles") {
+      moneda = "S/.";
+    }
+    switch (tipoCambio) {
+      case "Soles":
+        moneda = "S/.";
+        valor = element.valor
+        break;
+      case "Dolares":
+        moneda = "$";
+        valor = Math.round(element.valor / 3.77)
+        break;
+      case "Euros":
+        moneda = "€"
+        valor = Math.round(element.valor / 3.94)
+        break;
+      default:
+        moneda = "S/.";
+        break;
+    }
+    totalCantidad = cantidadProductos * valor;
+
     $("#carrito").append('<div class="media"><a class="pull-left" href="#!"><img class="media-object" src="'
-    +element.imagen+'" alt="image"/></a><div class="media-body"><h4 class="media-heading"><a href="#!">'
-    +element.nombre+'</a></h4><div class="cart-price"><span>1 x</span><span>'
-    +element.valor+'</span></div><h5><strong>'
-    +element.valor+'</strong></h5></div><a href="#!" class="remove"><i class="tf-ion-close"></i></a></div>');
-    totalCarrito +=element.valor
-  });
-  $("#totalCarrito").text(totalCarrito);
+      + element.imagen + '" alt="image"/></a><div class="media-body"><h4 class="media-heading"><a href="#!">'
+      + element.nombre + '</a></h4><div class="cart-price"><span>' + cantidadProductos + '</span> x <span>'
+      + moneda + totalCantidad + '</span></div><h5><strong>'
+      + moneda + totalCantidad + '</strong></h5></div><a href="#!" class="remove"><i class="tf-ion-close"></i></a></div>');
+    totalCarrito += totalCantidad;
+  })
+
+  $("#totalCarrito").text((moneda) + totalCarrito);
 }

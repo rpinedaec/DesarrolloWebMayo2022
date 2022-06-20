@@ -93,6 +93,7 @@ $(document).ready(function () {
   $("#productos").text("");
   cargarProductos();
 });
+
 let productos = [];
 function cargarProductos() {
   axios({
@@ -103,84 +104,160 @@ function cargarProductos() {
       // console.log(response);
       if (response.status === 200) {
         productos= response.data;
-        response.data.forEach(element => {
-          let promo = "";
-          let moneda = "S/.";
-          let valor = 0.00;
-          if (element.promocion)
-            promo = '<span class="bage">En Promocion</span>'
-          if (tipoCambio === "Soles") {
-            moneda = "S/.";
-          }
-          switch (tipoCambio) {
-            case "Soles":
-              moneda = "S/.";
-              valor = element.valor
-              break;
-            case "Dolares":
-              moneda = "$";
-              valor = Math.round( element.valor / 3.77)
-              break;
-            case "Euros":
-              moneda = "€"
-              valor = Math.round( element.valor / 3.94)
-              
-              break;
-            default:
-              moneda = "S/.";
-              break;
-          }
-          $("#productos").append('<div class="col-md-4"><div class="product-item"><div class="product-thumb">' 
-          + promo + '<img class="img-responsive" src="' 
-          + element.imagen + ' " alt="product-img"/><div class="preview-meta"><ul><li><span data-toggle="modal" data-target="#product-modal" onclick="productoActual(\''
-          + element.codigo +'\')"><i class="tf-ion-ios-search-strong"></i></span></li><li> <a href="#!" ><i class="tf-ion-ios-heart"></i></a></li><li><a href="#!"><i class="tf-ion-android-cart"></i></a></li></ul> </div></div><div class="product-content"><h4><a href="product-single.html">' 
-          + element.nombre + '</a></h4><p class="price">'
-          + moneda 
-          + valor + '</p></div></div>');
-        });
-
+        //obtenerProductos(productos);
+        obtenerProductos();
       }
       else {
         console.log("No se ejecuto")
       }
     });
 }
+
+function obtenerProductos() {
+  productos.forEach(element => {
+    let promo = "";
+    let moneda = "S/.";
+    let valor = 0.00;
+    if (element.promocion){
+      promo = '<span class="bage">En Promocion</span>';
+      $(".sliderImgBackground").css("background-image", "url(" + element.imagen + ")");
+      $("#sliderPromo").html(promo);
+      $("#sliderProducto").text(element.nombre);
+    }
+    if (tipoCambio === "Soles") {
+      moneda = "S/.";
+    }
+    switch (tipoCambio) {
+      case "Soles":
+        moneda = "S/.";
+        valor = element.valor
+        break;
+      case "Dolares":
+        moneda = "$";
+        valor = Math.round( element.valor / 3.77);
+        break;
+      case "Euros":
+        moneda = "€"
+        valor = Math.round( element.valor / 3.94);
+        break;
+      default:
+        moneda = "S/.";
+        break;
+    }
+    $("#productos").append('<div class="col-md-4"><div class="product-item"><div class="product-thumb">' 
+    + promo + '<img class="img-responsive" src="' 
+    + element.imagen +'" alt="product-img"/><div class="preview-meta"><ul><li><span data-toggle="modal" data-target="#product-modal" onclick="productoActual(\''
+    + element.codigo +'\')"><i class="tf-ion-ios-search-strong"></i></span></li> <li><span  onclick="btnLikes(\''
+    + element.codigo +'\')"><i id="btnHeart'+ element.codigo +'" class="tf-ion-ios-heart"></i></span></li> <li><a id="btnCarrito" onclick="btnAgregarCarrito(\''
+    + element.codigo +'\')" href="#!"><i class="tf-ion-android-cart"></i></a></li></ul> </div></div><div class="product-content"><h4><a href="product-single.html">' 
+    + element.nombre + '</a></h4><p class="price">'
+    + moneda 
+    + valor + '</p></div></div>');
+  });
+}
+
 let tipoCambio = 'Soles';
 $('#tipoCambio').change(function () {
   tipoCambio = $(this).val();
   $("#productos").text("");
-  cargarProductos();
+  obtenerProductos();
+  cargarCarrito();
 });
 
+
+/*---------- Block asignando productos al carrito ----------*/
 let itemActual;
 let carritoCompras= [];
-
+/* Recogiendo el objecto seleccionado atraves de un id */
 function productoActual(id){
   let  item = productos.find(item => item.codigo === id)
   itemActual = item;
+  console.log(item);
   $("#imgProducto").attr("src", item.imagen);
   $("#nombreProducto").text(item.nombre);
   $("#precioProducto").text(item.valor);
   $("#DescripcionProducto").text(item.descripcion);
 }
 
+/* Evento click - btnLupa, agregando producto al carrito (Array->carritoCompras)*/
 $("#agregarItem").on("click", function () {
   carritoCompras.push(itemActual);
   cargarCarrito();
 });
+/* Evento click - btnCarrito, agregando producto al carrito (Array->carritoCompras)*/
+function btnAgregarCarrito(id){
+  let  item = productos.find(item => item.codigo === id)
+  carritoCompras.push(item);
+  cargarCarrito();
+}
+
+function btnLikes(id) {
+  let  item = productos.find(item => item.codigo === id)
+  if(item.codigo === id){
+    item.likes++;
+    $("#btnHeart"+id).text("");
+    $("#btnHeart"+id).text(item.likes);
+  }
+
+}
+/*---------- EndBlock asignando productos al carrito ----------*/
+/* Botón vaciar carrito*/
+
+$("#btnVaciarCarrito").on("click", function (e) {
+  carritoCompras = [];
+  cargarCarrito();
+});
+
 
 let totalCarrito = 0;
 
 function cargarCarrito(){
-  totalCarrito = 0
+  totalCantidadProductos = 0;
+  totalCarrito = 0;
+  let moneda = "S/.";
+  let valor = 0.00;
+  console.log(carritoCompras);
   $("#carrito").text("");
-  carritoCompras.forEach(element => {
-    $("#carrito").append('<div class="media"><a class="pull-left" href="#!"><img class="media-object" src="'
-    +element.imagen+'" alt="image"/></a><div class="media-body"><h4 class="media-heading"><a href="#!">'
-    +element.nombre+'</a></h4><div class="cart-price"><span>1 x</span><span>'
-    +element.valor+'</span></div><h5><strong>'
-    +element.valor+'</strong></h5></div><a href="#!" class="remove"><i class="tf-ion-close"></i></a></div>');
-    totalCarrito +=element.valor
+  let carritosinDuplicar = [... new Set(carritoCompras)];
+  console.log(carritosinDuplicar);
+
+  if (tipoCambio === "Soles") {
+    moneda = "S/.";
+  }
+  carritosinDuplicar.forEach(element => {
+    switch (tipoCambio) {
+      case "Soles":
+        moneda = "S/.";
+        valor = element.valor
+        break;
+      case "Dolares":
+        moneda = "$";
+        valor = Math.round( element.valor / 3.77)
+        break;
+      case "Euros":
+        moneda = "€"
+        valor = Math.round( element.valor / 3.94)
+        break;
+      default:
+        moneda = "S/.";
+        break;
+    }
+    let totalCantidadProductos = carritoCompras.reduce((acumulador, itemID) => {
+      return element.codigo===itemID.codigo ? acumulador += 1 : acumulador;
+      }, 0);
+    console.log(totalCantidadProductos);
+    $("#carrito").append(
+      `
+      <div class="media"><a class="pull-left" href="#!"><img class="media-object" src="${
+      element.imagen}" alt="image"/></a><div class="media-body"><h4 class="media-heading"><a href="#!">
+      ${element.nombre}</a></h4><div class="cart-price"><span>${totalCantidadProductos} x </span><span>
+      ${moneda} ${totalCantidadProductos * valor}</span></div><h5><strong>
+      ${moneda} ${totalCantidadProductos * valor}</strong></h5></div><a href="#!" class="remove"><i class="tf-ion-close"></i></a></div>
+      `
+    );
+    totalCarrito += totalCantidadProductos * valor;
+
   });
-  $("#totalCarrito").text(totalCarrito);
+
+  $("#totalCarrito").text(`${moneda} ${totalCarrito}`);
 }
