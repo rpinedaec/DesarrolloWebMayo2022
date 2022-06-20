@@ -179,12 +179,12 @@ function productoActual(id){
   $("#DescripcionProducto").text(item.descripcion);
 }
 
-/* Evento click - btnLupa, agregando producto al carrito (Array->carritoCompras)*/
+/* Evento click - btnLupa, agregando producto al carrito /
 $("#agregarItem").on("click", function () {
   carritoCompras.push(itemActual);
   cargarCarrito();
 });
-/* Evento click - btnCarrito, agregando producto al carrito (Array->carritoCompras)*/
+/* Evento click - btnCarrito, agregando producto al carrito (carritoCompras)*/
 function btnAgregarCarrito(id){
   let  item = productos.find(item => item.codigo === id)
   carritoCompras.push(item);
@@ -260,4 +260,36 @@ function cargarCarrito(){
   });
 
   $("#totalCarrito").text(`${moneda} ${totalCarrito}`);
+
+  var body = document.querySelector('body'),
+    clickTarget = document.getElementById('click-target'),
+    mouseOverTarget = document.getElementById('mouse-over-target'),
+    toggle = false;
+
+function makeBackgroundYellow() {
+    'use strict';
+
+    if (toggle) {
+        body.style.backgroundColor = 'white';
+    } else {
+        body.style.backgroundColor = 'yellow';
+    }
+
+    toggle = !toggle;
+}
+
+clickTarget.addEventListener('click',
+    makeBackgroundYellow,
+    false
+);
+
+mouseOverTarget.addEventListener('mouseover', function () {
+    'use strict';
+
+    clickTarget.removeEventListener('click',
+        makeBackgroundYellow,
+        false
+    );
+});
+element.removeEventListener("mousedown", handleMouseDown, { passive: true });
 }
