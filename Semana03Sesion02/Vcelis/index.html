@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TAREA</title>
+
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+            <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+            <script src="https://kit.fontawesome.com/0d5b745540.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jumbotron">
+                        <h2>
+                            Agregar Contactos
+                        </h2>
+                        <p>
+                            Esta pagina agrega contactos a una tabla y visualiza su información
+                        </p>
+                        <p>
+                            <a class="btn btn-primary btn-large" href="#">Ver más</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <button id="buscar" type="button" class="btn btn-block btn-primary">
+                        Buscar
+                    </button>
+                </div>
+                <div class="col-md-6">
+                    <Select class="selectBootstrap" id="opciones">
+                        <option value="-1">Seleciona un valor</option>
+                    </Select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table id="tblResultados" >
+                        <thead>
+                            <tr>
+                              <th data-field="name" data-formatter="nameFormatter">Nombres</th>
+                              <th data-field="nat">Nacionalidad</th>
+                              <th data-field="email">Email</th>
+                              <th data-field="gender">Genero</th>
+                              <th data-field="operate" data-formatter="operateFormatter" data-events="operateEvents">Acciones</th>
+                            </tr>
+                          </thead>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                </div>
+                <div class="col-md-4">
+
+                    <button id="verDatos" type="button" class="btn btn-success btn-block">
+                        Ver Datos
+                    </button>
+                </div>
+            </div>
+            <section id="team" class="pb-5">
+                <div class="container">
+                    <h5 class="section-title h1">OUR TEAM</h5>
+                    <div id="teams" class="row">
+                        <!-- Team member -->
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

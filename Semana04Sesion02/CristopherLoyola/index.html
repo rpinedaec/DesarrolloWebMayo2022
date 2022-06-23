@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/iconriot.png">
+    <title>RiotInfo</title>
+    <!-- CSS only -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container container-fluid">
+          <p class="h1"><a class="navbar-brand" href="#">RiotInfo</a></p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#actualidad" >Actualidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#juegos" >Juegos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact" >Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" >
+          <div class="carousel-item active" >
+            <img src="img/img6.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img4.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/img3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+    <br/>
+
+    <div class="container" id="actualidad">
+      <p class="h1 text-white">Actualidad</p>
+      <div class="row">
+        <div class="col-sm-8" data-aos="fade-down">
+          <div class="card" id="info-1" style="width:100%;">
+          <img src="./img/img2.jpg" class="card-img-top w-20" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Riot y Xbox se unen en Game Pass</h5>
+            </div>
+          </div>
+          <br/>
+        </div>
+        <div class="col-sm-3 " data-aos="fade-left">
+          <div class="card" id="info-2" style="width:100%;">
+            <img src="./img/img3.jpg" class="card-img-top w-20" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">La henna, los gatos y el mal de ojo:como los Rioters..</h5>
+            </div>
+          </div>
+          <br/>
+
+          <div class="card" id="info-3" style="width:100%;" data-aos="fade-left">
+            <img src="./img/img4.jpg" class="card-img-top w-20"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Resumen del Mes de la Historia Asiatica...</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+
+    <div class="container" id="juegos">
+      <p class="h1 text-white">Nuestros Juegos</p>
+    <div class="row">
+      <div class="col-sm-8" data-aos="zoom-in">
+        <a href="https://playvalorant.com/es-mx/"  target="_blank" class="link-dark">
+        <div class="card" id="card1" style="width: 100%;">
+          <img src="img/valorant.jpg"  id="img1" class="card-img-top" alt="...">
+          <div class="card-body">
+           <p class="card-text fw-bold">Valorant</p>
+          </div>
+        </div> 
+        </a>
+        <br/> 
+      </div> 
+
+      <div class="col-sm-3" data-aos="zoom-in-left">
+        <a href="https://teamfighttactics.leagueoflegends.com/es-mx/"  target="_blank" class="link-dark">
+          <div class="card" style="width: 100%;">
+            <img src="img/dragon.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text  fw-bold">TeamFight Tactics 2022.</p>
+            </div>
+          </div>
+        </a>
+        <br/>
+
+        <div class="card" style="width: 100%;" data-aos="zoom-in-left">
+          <a href="https://www.leagueoflegends.com/es-mx/"  target="_blank" class="link-dark">
+            <img src="img/img6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text  fw-bold">Legue of Leguend</p>
+            </div>
+          </a>
+        </div> 
+        <br/> 
+      </div>
+
+      <div class="col-md-5" data-aos="zoom-in">
+        <a href="https://playruneterra.com/es-es/"  target="_blank" class="link-dark">
+        <div class="card" style="width: 100%;">
+          <img src="img/runeterra.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text  fw-bold">Legends of Runeterra</p>
+          </div>
+        </div>
+        </a>
+        <br/>  
+      </div>
+
+
+
+      <div class="col-md-6" data-aos="zoom-out">
+        <a href="https://playruneterra.com/es-es/"  target="_blank" class="link-dark">
+          <div class="card" style="width: 100%;">
+            <img src="img/runn.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-bold">Ruined King</p>
+            </div>
+          </div>
+       </a>
+        <br/>  
+      </div>
+    </div>
+    </div>
+    <!-- Modal1 -->
+    <div class="modal fade modal-lg " id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Riot y Xbox se unen en Game Pass</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body col-auto text-center">
+            <div>
+              <p class="text-start text-break font-italic">Desde antes de que Riot Games fuera siquiera un concepto, Xbox nos ha inspirado con su incesante impulso para hacer avanzar los juegos y construir comunidades inclusivas. Vemos en Xbox un equipo como Riot, un equipo que desafía las convenciones que dictan cómo los estudios de desarrollo y editores deben consagrarse a los jugadores.
+                Hoy, Riot Games y Xbox anuncian que todos los grandes títulos Riot llegan a Game Pass. Esto reúne a dos de las mayores comunidades de jugadores del mundo en torno a su amor compartido por los juegos competitivos centrados en los jugadores. Game Pass es la última de una larga serie de innovaciones de Xbox, y estamos deseando añadir
+                nuestros juegos a su catálogo. Estamos encantados de invitar a los jugadores de Xbox a unirse a nuestra comunidad de 180 millones de jugadores que aspiran a convertirse en profesionales, 
+                de jugadores atascados en plata, de creadores de contenido, fans de K/DA, y mucho más.
+                Por primera vez en Game Pass, esta colaboración se extenderá más allá del ordenador, e incluirá incluir títulos de Riot exclusivos para móvil. Todos los miembros de Game Pass desbloquearán el acceso a:
+
+                <p class="fw-bold text-start">• League of Legends (PC): Todos los campeones desbloqueados</p> 
+                <p class="fw-bold text-start">• League of Legends: Wild Rift (móvil): Todos los campeones desbloqueados</p> 
+                <p class="fw-bold text-start">• Legends of Runeterra (PC y móvil): Set de Cimientos desbloqueado</p> 
+                <p class="fw-bold text-start">• Teamfight Tactics (PC y móvil): Minileyendas desbloqueadas</p> 
+                <p class="fw-bold text-start">• VALORANT (PC): Todos los agentes desbloqueados</p> 
+
+               <p class="text-break text-start">Los jugadores también recibirán experiencia adicional en determinados títulos.
+                En los próximos meses, compartiremos más información sobre esta colaboración y cómo los miembros 
+                de Game Pass podrán acceder al contenido. La mayoría de los países tendrán acceso a todo el contenido 
+                de Game Pass pero, en algunos casos, su contenido podría estar limitado. Para más información, estad atentos
+                a riotgames.com y news.xbox.com.</p> </p>
+            </div>
+          </div>
+          <div class="col-auto justify-content-center">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/JndZPfcvdBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade modal-lg " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">La henna, los gatos y el mal de ojo: cómo los Rioters de Turquía nos ayudaron a crear a Fade en VALORANT</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body col-auto text-center">
+            <div>
+              <p class="text-start text-break font-italic">Conforme el avión sobrevuela Estambul (Turquía), los agentes de VALORANT se 
+                lanzan para descifrar un mensaje de lo más amenazador. En el suelo, un humo negro les da la bienvenida, rodeándolos con sus propias pesadillas. 
+                La flecha de Sova ilumina a Fade, la agente 20 del protocolo de VALORANT, mientras se enfrenta al equipo.
+                Una entrada de lo más sospechosa para la iniciadora sombría. Pero detrás de su fachada oscura, 
+                su trabajo como cazarrecompensas y su capacidad para dominar las pesadillas, hay una mujer turca.
+                "Como mujer, una siempre debe prestar más atención a sus alrededores", explica Nihan Dinç, una 
+                supervisora de la gestión de marca que trabaja en la oficina de Riot en Estambul. "Fade es fuerte y
+                 también da un poco de miedo. Pero siempre tiene en cuenta todo lo que le rodea; sabe perfectamente dónde está 
+                 todo el mundo en cada momento. Es una experiencia con la que muchas mujeres se sentirán identificadas".
+                Hay un montón de decisiones que deben tomarse a lo largo de la creación de un nuevo agente. El equipo de 
+                diseño de personajes de VALORANT debe establecer primero el rol del agente nuevo, cómo dar forma a la identidad 
+                única de dicho agente y cómo hacer que encaje en el protocolo de VALORANT. Además, también tienen que crear su personalidad, 
+                una decisión que normalmente comienza estableciendo el lugar de origen.
+                Los sueños tienen un papel muy importante en la cultura turca, así que el hecho de que Fade tenga control de las 
+                pesadillas encaja a la perfección con sus raíces turcas. Además, hay un montón de jugadores de VALORANT en Turquía a los 
+                que les encantaría verse representados en el juego. Así que para asegurarnos de que Fade encaja entre la población turca, 
+                el equipo de diseño de personajes de VALORANT trabajó mano a mano con los Rioters de Estambul. La primera decisión importante fue elegir el género
+                "Las mujeres tienen una representación menor en los juegos, y esto también se aplica a Turquía", explica Bahadir Guven, a cargo de la gestión de 
+                la comunidad, que lleva desde 2012 trabajando en la sede de Estambul. "Queremos que nuestras jugadoras tengan una fuerte representación femenina. 
+                Alguien a quien puedan admirar, que represente su cultura y su lugar en el mundo de los videojuegos".</p>
+            </div>
+          </div>
+          <div class="col-auto justify-content-center">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/e7VOQ1l20eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal3 -->
+    <div class="modal fade modal-lg " id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Resumen del Mes de la Historia Asiático-americana y de las Islas del Pacífico</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body col-auto text-center">
+            <div>
+              <p class="text-start text-break font-italic">A lo largo de mayo, se celebra el Mes de la Historia 
+                Asiático-americana y de las Islas del Pacífico en Estados Unidos. Durante dicho mes, se homenajea a 
+                estas comunidades y se celebran sus contribuciones a la historia y cultura de Estados Unidos. El Mes de 
+                la Historia Asiático-americana y de las Islas del Pacífico se celebra en mayo debido a dos 
+                acontecimientos históricos que se produjeron durante ese mes y están relacionados con las comunidades 
+                de esas regiones. El 7 de mayo de 1843, los primeros inmigrantes japoneses llegaron a Estados Unidos, 
+                y el 10 de mayo de 1869 se completó la construcción del primer ferrocarril transcontinental de Estados 
+                Unidos, gracias en gran medida a los trabajadores chinos.
+                A lo largo de mayo, Riot ha aprovechado la oportunidad de homenajear y aprender sobre 
+                las tradiciones e historia de los asiático-americanos y nativos de las Islas del Pacífico.
+          
+                Cómo lo celebramos
+                Formación de un nuevo grupo de inclusión para Rioters asiáticos y nativos de las Islas del Pacífico
+                En Riot, lo hemos celebrado inaugurando un nuevo grupo de inclusión (RIG) para los Rioters asiáticos 
+                y nativos de las Islas del Pacífico. Este RIG servirá a todos los Rioters de estas regiones para 
+                reunirse, aprender de las cosas que tienen en común y de las diferencias culturales que hay entre ellos,
+                 y defender a los asiáticos y nativos de las Islas del Pacífico que trabajan en Riot. Este grupo 
+                 establecerá conexiones con todas las oficinas de Riot y adoptará una estrategia global.
+                
+                Al dar a conocer y divulgar las historias de estas regiones, este RIG conseguirá que la propiedad 
+                intelectual de Riot resuene más con dichas comunidades. Este nuevo RIG se centrará en mejorar la 
+                representación, el compromiso, la retención, la inclusión y el interés de los Rioters asiáticos y 
+                nativos de las Islas del Pacífico que hay repartidos por todo el mundo.
+                
+                Evento inaugural
+                Celebramos el evento inaugural de nuestro nuevo RIG el 26 de mayo. En homenaje a la 
+                temática del Mes de la Historia Asiático-americana y de las Islas del Pacífico, "impulsar a 
+                los líderes a través de la colaboración", Mags Ng, directora de producción de Riot, dio una charla. 
+                Mags compartió una conmovedora historia sobre su identidad como una inmigrante de Hong Kong. Habló 
+                sobre la cambiante relación que ha tenido con su identidad, entrelazada con más de 20 años de experiencia en el mundo de los videojuegos. Al compartir historias tan emotivas, animó a todo el mundo a ser ellos mismos sin arrepentimiento alguno y a celebrar todo lo que nuestras identidades tienen que ofrecer.
+                
+                Tras la sesión, salimos a socializar con deliciosa comida y bebida preparada por NOMs, 
+                la cafetería de nuestras instalaciones. Entre las delicatessen de las que disfrutamos había 
+                tostas de gambas y mochis de té matcha. Fue un evento de lo más divertido y alegre, en el que
+                 pudimos conocer a nuestros compañeros y aliados asiáticos y nativos de las Islas del Pacífico, 
+                 conectar con comida deliciosa y conversación de calidad, y celebrar parte de lo que esta vasta 
+                 comunidad puede ofrecer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="text-white h1">Nuevo Contenido</p>
+      <div class="col-sm-11 shadow-lg rounded">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/Ohgtglx6SRM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>    
+    </div>
+
+    <form id="form" data-aos="fade-up">
+      !-- Form Snippet -->
+
+      <div class="container-fluid px-5 my-5 bg-dark " id="contact">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+                  <div class="col-sm-6 p-4">
+                    <div class="text-center">
+                      <div class="h2 fw-bold">Contactanos para mas informacion</div>
+                      <p class="mb-4 text-muted">Llena el formulario..</p>
+                    </div>
+
+                    <form id="contactForm" >
+
+                      <div class="form-floating mb-3 ">
+                        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                        <label for="name">Name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">Contactanos.</div>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                        <label for="emailAddress" >Email Address</label>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                      </div>
+
+
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                      </div>
+
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                          <div class="fw-bolder">Form submission successful!</div>
+                          <p>To activate this form, sign up at</p>
+
+                        </div>
+                      </div>
+
+                      <!-- Submit error message -->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                      </div>
+
+                      <!-- Submit button -->
+                      <div class="d-grid" >
+                        <button class="btn btn-dark btn-lg" id="suscribete" type="" >Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    <button  class="btn btn-danger btn-top shadow-lg " id="btn-top"><i class="bi bi-arrow-up-circle text-bg-danger h3" ></i></button>
+
+    <div  id="exampleModal4" class="toast align-items-center text-bg-danger border-0 bottom-0 end-0 toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">
+          Porfavor Ingresar todos los datos
+          del formulario, Gracias.
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+
+      <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">CristopherLz</a>
+      </div>
+    </footer>
+
+    </div>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+[
+	{
+		"id": 1,
+		"marca": "Bicicleta MTB Fox",
+		"imagen": "img/BicicletaMTBFox.jpg",
+		"precio": "1699",
+        "detalles": ["Modelo: EF-5", "Material: Cromolý Integrado"]
+	},
+	{
+		"id": 2,
+		"marca": "Bicicleta Trinx Swift",
+		"imagen": "img/BicicletaTrinxSwift.jpg",
+		"precio": "2599",
+		"detalles": ["Modelo: EF-5", "Material: Cromolý Integrado"]
+	},
+	{
+		"id": 3,
+		"marca": "Bicicleta Fixie Inglesa",
+		"imagen": "img/BicicletaFixieInglesa.png",
+		"precio": "1049",
+		"detalles": ["Modelo: Paris", "Material: Acero Hiten"]
+	},
+	{
+		"id": 4,
+		"marca": "Bicicleta de Mujer Vintage",
+		"imagen": "img/BicicletadeMujerVintage.jpg",
+		"precio": "740",
+		"detalles": ["Modelo: Paris", "Material: Acero Hiten"]
+	},
+	{
+		"id": 5,
+		"marca": "Bicicleta Hibrida Unisex",
+		"imagen": "img/BicicletaHibrida.png",
+		"precio": "879",
+		"detalles": ["Modelo: Radius 9982 aro 700", "Material: Aluminio, Cola de carbono"]
+	},
+	{
+		"id": 6,
+		"marca": "Bicicleta Cross de Aluminio",
+		"imagen": "img/BicicletadeAluminio.jpg",
+		"precio": "2349",
+		"detalles": ["Modelo: 227CR","Material: Aluminio"]
+
+	},
+	{
+		"id": 7,
+		"marca": "Bicicleta Venzo Radius",
+		"imagen": "img/BicicletaVenzoRadius.jpg",
+		"precio": "1099",
+		"detalles": ["Modelo: Radius 9088 aro 29", "Material: Aluminio"]
+	},
+	{
+		"id": 8,
+		"marca": "Bicicleta Híbrida Carbono",
+		"imagen": "img/BicicletaHíbridaCarbono.jpg",
+		"precio": "1499",
+		"detalles": ["Modelo: Radius 9982 aro 700", "Material: Aluminio, Cola de carbono"]
+	},
+	{
+		"id": 9,
+		"marca": "Bicicleta De Aluminio Doble Suspensión",
+		"imagen": "img/BicicletaDeAluminioDobleSuspensión.png",
+		"precio": "10090",
+		"detalles": ["Modelo: Radius 9412 aro 26", "Material: Aluminio"]
+	}
+]

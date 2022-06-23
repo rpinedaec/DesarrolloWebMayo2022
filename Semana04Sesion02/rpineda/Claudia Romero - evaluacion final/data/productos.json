@@ -1,0 +1,62 @@
+[
+    {
+        "codigo": "ARTCIULO0001",
+        "nombre": "El gran tesoro de la naturaleza",
+        "descripcion":"En esta unidad Ania y Kin junto a sus amigos, cruzan desiertos, escalan montañas y navegan ríos y océanos para descubrir un tesoro muy especial.",
+        "categoria": "libro",
+        "imagen": "https://drive.google.com/uc?export=view&id=1Es_hZ3SeanA8fgDmgE4vgUhaEJvQbxhE",
+        "cantidad": 1000,
+		"valor":20,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0002",
+        "nombre": "TiNi, un lugar mágico",
+        "descripcion":"En esta unidad Tawa les otorga un pedacito de tierra a Ania y Kin para que, con su imaginación y cariño, y la ayuda de la Madre Tierra, creen ahí un lugar especial para las plantas, animales y personas.",
+        "categoria": "libro",
+        "imagen": "https://drive.google.com/uc?export=view&id=10f5_OTWrFIJKY6lGNJA6AuVmUNFB46rv",
+        "cantidad": 50,
+		"valor":20,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0003",
+        "nombre": "Un refugio especial",
+        "descripcion":"En este cuento Meshi le pide a Ania y Kin que busquen en el bosquecito de la casa de Tawa los animalitos silvestres que viven ahí. Al hacerlo ellos les cuentan a Ania y Kin cómo llegaron ahí.",
+        "categoria": "libro",
+        "imagen": "https://drive.google.com/uc?export=view&id=1Rp_Xl5qHapFP0L0OYRD5IvLlvcWYZteR",
+        "cantidad": 35,
+		"valor":20,
+        "promocion": false
+    },
+    {
+        "codigo": "ARTICULO0004",
+        "nombre": "Bea y la danza del sol",
+        "descripcion":"En esta unidad la mariposita Bea bailará por primera vez la danza del sol tan importante para las flores. Ella está insegura porque tiene una alita diferente y teme no bailar bien. Ania y Kin la animan y el baile de Bea trae más alegrías que las esperadas.",
+        "categoria": "libro",
+        "imagen": "https://drive.google.com/uc?export=view&id=1SiAQYPG41VfxMfKm8r8pBcilpGQnPw-q",
+        "cantidad": 150,
+		"valor":10,
+        "promocion": true
+    },
+    {
+        "codigo": "ARTICULO0005",
+        "nombre": "Un monstruo en el jardín",
+        "descripcion":"En esta historia Ania y Kin se llenan de valor para llevarle comidita a Guácala ¡el monstruo de la compostera! Un ser muy especial y divertido con quien desarrollarán una amistad y aprenderán sobre el compostaje.",
+        "categoria": "libro",
+        "imagen": "https://drive.google.com/uc?export=view&id=1pcbf-tsMjxd05n7XNlqT26N0by3lvgr9",
+        "cantidad": 30,
+		"valor":20,
+        "promocion": false
+    },   
+    {
+        "codigo": "ARTICULO0006",
+        "nombre": "La banda bum-ba-bum",
+        "descripcion":"En esta historia Ania y Kin conocen a unas latas, botellas, carteles y llanta usadas y tristes que serán desechadas como basura. Ellos las rescatan y les dan un segundo uso en la TiNi.",
+        "categoria": "libro",
+        "imagen": "https://drive.google.com/uc?export=view&id=1kl_aChOYp8MpEUStitt0a6eWatbDu3cy",
+        "cantidad": 150,
+		"valor":20,
+        "promocion": false
+    }
+]
